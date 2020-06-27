@@ -1,0 +1,33 @@
+<p>Proiect web <abbr title="Hypertext Markup Language">HTML</abbr>+<abbr title="Cascading Style Sheets">CSS</abbr> Zaharia Catalin</p>
+<p>Contact: <a href="mailto:catalinzaharia@gmail.com">catalinzaharia0112@gmail.com</a> </p> 
+
+
+<div>
+        <label for="sizes">Dimensiune Font:</label>
+        <select name="sizes">
+          <option value="small" class="fontOption">Mic</option>
+          <option value="medium" class="fontOption">Mediu</option>
+          <option value="large" class="fontOption">Mare</option>
+        </select>
+        <button onclick="updateFont()"> Aplica </button>
+        <button onclick="resetFont()"> Reseteaza </button>
+</div>
+
+<div>
+    <p id="wordP">Numar Cuvinte: </p>
+</div>
+
+<div> 
+    <label for="bgColor">Culoare Background:</label>
+        <input id="bgColor" name="bgColor" value="white"></input>
+        <button onclick="updateColor()"> Aplica </button>
+        <button onclick="resetColor()"> Reseteaza </button>
+</div>
+
+<div>
+  <p></p>
+  <button id="imgToggle" onclick="imgToggle()">Ascunde Imagini</button>
+</div>
+
+<p><a href=""><small>Inceputul paginii</small></a></p>
+<script src="js/footer.js"></script>

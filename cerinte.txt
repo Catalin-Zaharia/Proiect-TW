@@ -1,0 +1,23 @@
+fisier separat JavaScript;
+modificarea stilului unui element sau al unui grup de elemente;
+manevrarea DOM-ului (selectare dupa id, tag, clasa, selectorCSS);
+creare/stergere de elemente;
+folosirea evenimentelor generate de mouse/tastatura;
+modificare de proprietati;
+inputuri functionale (de exemplu: input de tip text/range/number/radio/checkbox, select, textarea);
+setTimeout, setInterval.
+folosirea localStorage.
+elementele de JavaScript sa fie integrate cu sens in cadrul proiectului ( aplicatie javascript).
+
+
+
+
+
+numar cuvinte 1  2:13
+setare salvare dim text 1 2:10
+background animat 0.5 1:15
+culoare valida 0.5 1:11
+aparitie treptata titlu 1 2:3
+aparitie treptata paragraf 1 2:2
+ascunde img 0.5 1:8
+salut utilizator 0.5

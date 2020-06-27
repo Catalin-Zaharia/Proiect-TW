@@ -1,0 +1,358 @@
+@font-face {
+    font-family: OpenSansCondensed;
+    src: url(https://fonts.gstatic.com/s/opensanscondensed/v14/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff0GmDuXMR7eS2Ao.woff2);
+  }
+@font-face {
+    font-family: OpenSansCondensedL;
+    src: url(https://fonts.gstatic.com/s/opensanscondensed/v14/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff0GmDuvMR7eS2AopSg.woff2);
+  }
+
+.menu{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    justify-content: center;
+    overflow: hidden;
+}
+.login{
+    margin-top: 1.3%;
+}
+
+.logo{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    float: left;
+    margin-right: 3%;
+}
+
+#menu_items{
+    margin-top: 1.3%;
+}
+
+.login a{
+    font-family: "OpenSansCondensed";
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.login p{
+    font-family: "OpenSansCondensed";
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#login{
+    font-family: "OpenSansCondensed";
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 16px;
+}
+
+.login{
+    margin-left: 25px;
+}
+
+input{
+    font-family: "OpenSansCondensed";
+    font-size: 14px;
+}
+
+#loginUser{
+    opacity: 0.5;
+}
+#loginPass{
+    opacity: 0.5;
+}
+
+.loginButton   {
+    text-transform: uppercase;
+    opacity: 100%;
+    letter-spacing: 1px;
+}
+
+a.reg_button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    font-size: 14px;
+    color: initial;
+}
+
+input:focus-within{
+    opacity: 100%;
+}
+
+#register{
+    border: 1px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+.respImg{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+main *{
+    font-family: "OpenSansCondensed";
+}
+main a{
+    text-decoration: none;
+    color: black;
+}
+main a:hover{
+    text-decoration: underline;
+}
+
+main h2, h3{
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top:25px;
+}
+.prodContainer{
+    
+    padding-left: 0px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.prodContainer div{
+    justify-content: center;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: block;
+}
+
+section p{
+    text-align: center;
+}
+footer{
+    margin-top: 40px;
+}
+footer *{
+    font-family: "OpenSansCondensed";
+}
+footer a{
+    color: black;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+#produse{
+    margin-left: 1%;
+}
+#produse img{
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+.menu_list{
+    float: left;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.day{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.day__label{
+    margin-right: 1%;
+}
+.day__hours{
+    margin-left: 1%;
+}
+.menu_list_item_link {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    float: left;
+    justify-content: center;
+    font-size: 14px;
+
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "OpenSansCondensed";
+    text-transform: uppercase;
+    margin-left: 25px;
+  }
+
+.menu_list_item{
+    display: inline;
+    overflow: hidden;
+}
+
+.menu_list_item_link:hover, .menu_list_item_links:focus {
+    text-decoration: underline;
+}
+
+.menu_list_item_link:hover + .dropdown-content, .menu_list_item_link:focus+ .dropdown-content, .dropdown-content:hover{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute ;
+    margin-left: 20px;
+    overflow: hidden;
+    margin-top: 40px;
+    z-index: 1;
+    background-color: #ffffff;
+  }
+
+.dropdown-content ul{
+    padding-left: 0px;
+}
+
+.dropdown-content a{
+    margin-left: 20px;
+    align-content: center;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    opacity: 0.5;
+     transition: 0.3s;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "OpenSansCondensed";
+    text-transform: uppercase;
+}
+
+.dropdown-content  a:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.dropdown-content li{
+    display: block;
+    list-style-type: none;
+    font-family: "OpenSansCondensedL";
+}
+
+.dropdown-content li:hover{
+    text-decoration: underline;
+}
+.overlay{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+#filterContainer{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 120px 120px 270px 120px 30px;
+    justify-content: center;
+}
+
+#filterContainer input{
+    width: 22px;
+}
+
+#filtruTema{
+    display: grid;
+
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: auto auto ;
+    justify-content: space-evenly;
+}
+
+a{
+    font-size: 0.8vw;
+}
+p, .day span{
+    font-size: 1vw;
+}
+h2{
+    font-size: 1.5vw;
+}
+h3{
+    font-size: 1.2vw;
+}
+table {
+    font-size: 0.9vw;
+    display: flex;
+    justify-content: center;
+}
+table td{
+    display: contents;
+}
+table tr{
+    margin-top: 0.5%;
+}
+.respImg:hover{
+    filter: opacity(0.2);
+    transition: 0.3s;
+}
+.gridItem{
+    position: relative;
+    text-align: center;
+}
+.centered {
+    opacity: 0;
+    font-size: 2vw;
+    user-select: none;
+    background: -webkit-linear-gradient(rgb(218, 255, 7), rgb(0, 250, 83), rgb(137, 118, 248));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    transition: 0.3s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered p{
+    font-size: 1.1vw;
+}
+
+.respImg:hover ~ .centered{
+    opacity: 1;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 900px) {
+    /* For mobile phones: */
+    .menu{
+        grid-template-columns: auto auto auto auto auto;
+    }
+    .menu :nth-child(1){
+        grid-column: 1 / span 5;
+        justify-self: center;
+    }
+
+  }
+
+@media only screen and (max-width: 750px) {
+    /* For mobile phones: */
+    #gridContainer, .prodContainer{
+        grid-template-columns: auto;
+    }
+    
+    h2, h3{
+        font-size: 28px;
+    }
+    p, a, span, td{
+        font-size: 20px;
+    }
+  }

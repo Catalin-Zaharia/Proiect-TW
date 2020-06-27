@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <link rel="shortcut icon" href="favicon/favicon-16x16.png" type="image/x-icon">
+	    <link rel="icon" href="favicon/favicon-32x32.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/style1.css">
+        <title> Lego </title>
+            <meta charset="UTF-8">
+            <meta name="description" content="Jucarii Lego">
+            <meta name="keywords" content="toys">
+            <meta name="author" content="Joac-o p-asta SRL">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/ejs.min.js"></script>
+        <script src="js/ajax.js"></script>   
+    </head>
+    <body>
+        <header>
+            <%- include ('../fragmente/header') %>
+        </header>
+        <main>
+            <div class="overlay">
+                <div id="filterContainer">
+                    <div id="filtruPret">
+                        <p onclick="sortPrice()">Pret</p>
+                        <p>Intre <input id="priceMin" type="text" value=""></input> si <input id="priceMax" type="text" value=""></input> lei </p>
+                    </div>
+                    <div id="filtruVarsta">
+                        <p onclick="sortAge()">Varsta</p>
+                        <p>Peste <input id="age" type="text" value=""></input> ani </p></div>
+                    <div id="filtruTema">
+                        <p>Teme</p>
+                        <div>
+                            <input type="checkbox" id="starwars" name="starwars" checked>
+                            <label for="StarWars">Star Wars</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="technic" name="technic" checked>
+                            <label for="tehnic">Technic</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="batman" name="batman" checked>
+                            <label for="batman">Batman</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="frozen" name="frozen" checked>
+                            <label for="frozen">Frozen</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="city" name="city" checked>
+                            <label for="city">City</label>
+                        </div>
+                    </div>
+                    <div id="filtruPiese">
+                        <p>Numar Piese</p>
+                        <p>Intre <input id="pieceMin" type="text" value=""></input> si <input id="pieceMax" type="text" value=""></input> piese </p>
+                    </div>
+                    <div id="butoaneFiltre"><button id="aplica" onclick="repop()">Aplica</button><button id="sterge" onclick="nofilter()">Sterge</button></div>
+                    <di>
+                        <p id="pieceTotal">Total piese in pagina: </p>
+                    </di>
+                </div>
+                
+                <div class="gridContainer" id="gridContainer">
+                    
+                </div>
+            </div>
+            <script src="js/sortfilter.js"></script>
+        </main>
+        <footer>
+            <%- include ('../fragmente/footer') %>
+        </footer>
+    </body>
+    
+</html>

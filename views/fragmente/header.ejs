@@ -1,0 +1,46 @@
+<nav class="menu">
+		<a href="/"><img class="logo" src="res/shop_index_logo.png" alt="Jurnal" ></a>
+		<div id="menu_items">
+			<div class="menu_list">
+				<a class="menu_list_item_link" href="#produse">PRODUSE</a>
+				<div class="dropdown-content">
+					<a href="#brand">Dupa Brand</a>
+					<ul>
+						<li><a href="/pgLego">Lego</a></li>
+						<li><a href="/pgHasbro">Hasbro</a></li>
+						<li><a href="/pgHelloKitty">Hello Kitty</a></li>
+					</ul>
+					<a href="#categorie">Dupa Categorie</a>
+					<ul>
+						<li><a href="/pgSeturiCons">Seturi constructie</a></li>
+						<li><a href="/pgFigurine">Figurine</a></li>
+						<li><a href="/pgExterior">Pentru exterior</a></li>
+					</ul>
+				</div>
+			</div>
+			<a class="menu_list_item_link" href="#promo">promotii</a>
+			<a class="menu_list_item_link" href="#livrare">livrare si retur</a>
+			<a class="menu_list_item_link" href="#despre">despre noi</a>
+			<a class="menu_list_item_link" href="#program">program</a>
+		</div>
+		<div class="login">
+			<% if(!locals.username) { %>
+				
+				<form id="login" method="post" action="/login">
+					<label>
+						<input onchange="changeUser()" onfocus="focusUser()" onblur="blurUser()" id="loginUser" type="text" name="username" value="Username">
+					</label>
+					<label>
+						<input onchange="changePass()" onfocus="focusPass()" onblur="blurPass()" id="loginPass" type="text" name="parola" value="Parola">
+					</label>
+					
+					<input type="submit" class="loginButton" value="Autentificare">
+					<a href="/inregistrare" class="reg_button">Inregistrare</a>
+				</form>
+				<script type="text/javascript" src="js/login.js"> </script>
+			<% } else { %>
+				<p>Buna ziua, <%= locals.username %></p> 
+				<a href="/logout" class="reg_button"> Logout</a>
+			<% } %>
+		</div>
+</nav>

@@ -1,0 +1,14 @@
+{"lastId":10,"items":
+    [
+        {"id":0, "nume":"Set Lego Spital", "pret":500, "varsta":11, "piese":642, "tema":"city", "src":"/res/LegoHospital.jpeg"},
+        {"id":1, "nume":"Set Lego Camping", "pret":180, "varsta":7, "piese":259, "tema":"city", "src":"/res/LegoCar.jpeg"},
+        {"id":2, "nume":"Set Lego Batmobil", "pret":750, "varsta":11, "piese":817, "tema":"batman", "src":"/res/LegoTumbler.jpeg"},
+        {"id":3, "nume":"Set Lego Castel Elsa", "pret":650, "varsta":8, "piese":728, "tema":"frozen", "src":"/res/LegoFrozenPalace.jpeg"},
+        {"id":4, "nume":"Set Lego Distrugator Star Wars", "pret":3500, "varsta":16, "tema":"starwars", "piese":4784, "src":"/res/LegoDestroyer.jpeg"},
+        {"id":5, "nume":"Set Lego Bugatti Chiron", "pret":1899, "varsta":16, "piese":3599, "tema":"technic", "src":"/res/LegoChiron.jpeg"},
+        {"id":6, "nume":"Set Lego Lamborghini Sian", "pret":1799, "varsta":18, "piese":3696, "tema":"technic", "src":"/res/LegoSian.jpeg"},
+        {"id":7, "nume":"Set Lego Batcave", "pret":450, "varsta":8, "piese":1038, "tema":"batman", "src":"/res/LegoBatcave.jpeg"},
+        {"id":8, "nume":"Set Lego Razorcrest", "pret":350, "varsta":9, "piese":794, "tema":"starwars", "src":"/res/LegoRazorcrest.jpeg"},
+        {"id":9, "nume":"Set Lego Trasura Elsei", "pret":100, "varsta":6, "piese":157, "tema":"frozen", "src":"/res/LegoWagon.jpeg"}
+    ]
+}

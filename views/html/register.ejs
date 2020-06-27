@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<link rel="shortcut icon" href="favicon/favicon-16x16.png" type="image/x-icon">
+	<link rel="icon" href="favicon/favicon-32x32.png" type="image/x-icon">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+<title> Inregistrare </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Inregistrare.">
+    <meta name="keywords" content="Creare cont, Inregistrare">
+	<meta name="author" content="Joac-o p-asta SRL">
+</head>
+<body>
+    <header>
+		<%- include ('../fragmente/header') %>
+    </header>
+<main>
+    <form method="post" action="/inreg" id="register">
+        <input type="text" name="username" value="Username" required>
+        <input type="text" name="nume" value="Nume" required>
+        <input type="text" name="email" value="Email" required>
+        <input type="password" name="parola" value="parola" required>
+        
+        <input type="checkbox" id="adult" name="adult">
+        <label for="adult">Sunt Major</label>
+        <input type="submit" class="loginButton" value="Submit">
+    </form>
+</main>
+<footer>
+	<%- include ('../fragmente/footer') %>
+</footer>
+</body>
+</html>
