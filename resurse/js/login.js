@@ -63,7 +63,7 @@ setInterval(() => {
 	loginPass.value="";
 	blurUser();
 	blurPass();
-}, 10000);
+}, 60000);
 //
 //
 //
